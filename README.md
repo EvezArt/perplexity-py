@@ -508,6 +508,28 @@ print(perplexity.__version__)
 
 Python 3.9 or higher.
 
+## Ethics & Experiment Design
+
+This project's experiment design serves as an ethical framework for development and research. All work is guided by the axiom:
+
+> **"Quantumly calculated through‑within‑until‑without"**  
+> — *Steven Crawford‑Maggard*
+
+### Classical Simulations Only
+
+**Important:** All references to quantum or temporal effects within this project represent classical simulations and computational models only. These are not claims of physical retrocausality, quantum mechanics, or temporal manipulation. The project operates entirely within conventional computational paradigms.
+
+### Unified Defense/Response Layer
+
+The system architecture incorporates multiple protective layers aligned with the guiding axiom:
+
+- **Technical Resources**: Robust API error handling, type-safe interfaces, and comprehensive validation
+- **Security Resources**: Authentication mechanisms, rate limiting, and secure credential management
+- **Operational Safeguards**: Automatic retries, timeout controls, and connection resilience
+- **System Resilience**: Graceful degradation, comprehensive logging, and version compatibility
+
+These layers work together to ensure reliable, secure, and ethical operation throughout the research and development lifecycle.
+
 ## Contributing
 
 See [the contributing documentation](./CONTRIBUTING.md).
