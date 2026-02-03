@@ -15,6 +15,16 @@ from perplexity.types import (
 )
 ```
 
+# Temporal Experiment Summaries
+
+The library includes a helper module for analyzing time-symmetric simulation experiments:
+
+```python
+from perplexity.lib.temporal_summary import synthesize_temporal_summary
+```
+
+See the [README](README.md#temporal-experiment-summaries) for usage examples and safety disclaimers.
+
 # Chat
 
 Types:
