@@ -504,6 +504,45 @@ import perplexity
 print(perplexity.__version__)
 ```
 
+## Temporal Experiment Summaries
+
+The library includes a helper module for synthesizing outputs from time-symmetric simulation experiments. This utility accepts experiment records and produces structured summaries with consistency scores, convergence analysis, and appropriate disclaimers.
+
+### Running the Demo
+
+```sh
+python examples/temporal_summary_demo.py
+```
+
+### Usage
+
+```python
+from perplexity.lib.temporal_summary import synthesize_temporal_summary
+
+# Define an experiment record
+experiment = {
+    "past_state": "quantum_system_ground_state",
+    "future_constraint": "excited_state_target_energy_5.2eV",
+    "final_state": "excited_state_achieved_energy_5.18eV",
+    "seed": 42,
+    "iterations": 1500,
+    "notes": "Standard perturbation analysis"
+}
+
+# Generate summary
+summary = synthesize_temporal_summary(experiment)
+
+print(f"Consistency Score: {summary['consistency_score']}")
+print(f"Convergence Notes: {summary['convergence_notes']}")
+print(f"Disclaimer: {summary['disclaimer']}")
+```
+
+### Important Safety Disclaimer
+
+**This temporal summary feature is for classical computational inference only.** It does NOT represent physical retrocausality or actual backward time propagation. All analysis is performed using standard forward-time simulation with post-hoc constraint evaluation. Results should be interpreted as theoretical exploration of time-symmetric scenarios, not as evidence of acausal phenomena.
+
+The module ensures deterministic output by default when using fixed seeds and parameters, making results reproducible across runs.
+
 ## Requirements
 
 Python 3.9 or higher.
